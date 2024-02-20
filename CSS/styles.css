@@ -1,0 +1,22 @@
+html 
+{
+    font-size: 100%;
+}
+
+body
+{
+    font-size: 16px;
+}
+
+.titulo 
+{
+    text-align: center;
+    font-size: 3.8rem;
+    color:red ;
+}
+
+.titulo span
+{
+    font-size: 2rem;
+    color: grey;
+}
