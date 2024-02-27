@@ -1,6 +1,18 @@
+/* Custum properties*/
+:root
+{
+    --blanco:  #ffffff;
+    --oscuro: #212121;
+    --primario: #ffc107;
+    --secundario: #0097a7;
+    --gris: #757575;
+}
+
+
 html 
 {
     font-size: 100%;
+    color: var(--gris);
 }
 
 body
@@ -19,4 +31,9 @@ body
 {
     font-size: 2rem;
     color: grey;
+}
+
+.navegacion-principal
+{
+    background-color: var(--secundario);
 }
