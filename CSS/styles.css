@@ -40,14 +40,14 @@ body
 
 .contenedor 
 {
-    width: 120rem;
-    /*una manera de poner los 4 margenes en 4 propiedades
+    width: 50rem;
+    /*una manera de poner los 4 margenes en 4 propiedades*/
     margin-top: 0;
     margin-bottom: 0;
     margin-left: auto;
-    margin-right: auto;*/
+    margin-right: auto;
     /*margin: 0 auto 0 auto; tomando las pocisiones de un reloj*/
-    margin: 0 auto; /*el primer valor corresponde a top y bottom, y el segundo a left y right*/
+    /*margin: 0 auto; el primer valor corresponde a top y bottom, y el segundo a left y right*/
 }
 
 .nav-bg
@@ -57,11 +57,22 @@ body
 
 .navegacion-principal 
 {
-    padding-top: 1rem;
+    display: flex;
+    justify-content: space-between; /*justify content es para filas y align-items es para columnas(flex-direction)*/
+    font-size: 2rem;
+    font-weight: bold; /*para poner en negritas*/
 }
 
 .navegacion-principal a
 {
+    padding-top: 1rem;
     color: var(--blanco);
-    text-decoration: dotted;
+    text-decoration: none;
+}
+
+.navegacion-principal a:hover
+{
+    background-color:var(--primario);
+    color:var(--oscuro);
+    
 }
