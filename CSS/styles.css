@@ -12,19 +12,48 @@
 html 
 {
     font-size: 100%;
-    color: var(--gris);
+    box-sizing: border-box;
+    /*hack para box model*/
+}
+
+*,*::before:*:after
+{
+    box-sizing: inherit;
+    /*hack para box model*/
 }
 
 body
 {
     font-size: 16px;
+    
+}
+
+/*Tipografia*/
+h1
+{
+    font-size: 3.8;
+}
+
+h2
+{
+    font-size: 2.8;
+}
+
+h3
+{
+    font-size: 1.8;
+}
+
+h1,h2,h3
+{
+    text-align: center;
 }
 
 .titulo 
 {
     text-align: center;
     font-size: 3.8rem;
-    color:red ;
+    color:black ;
 }
 
 .titulo span
@@ -40,14 +69,14 @@ body
 
 .contenedor 
 {
-    width: 50rem;
-    /*una manera de poner los 4 margenes en 4 propiedades*/
+    max-width: 120rem;
+    /*una manera de poner los 4 margenes en 4 propiedades
     margin-top: 0;
     margin-bottom: 0;
     margin-left: auto;
-    margin-right: auto;
+    margin-right: auto;*/
     /*margin: 0 auto 0 auto; tomando las pocisiones de un reloj*/
-    /*margin: 0 auto; el primer valor corresponde a top y bottom, y el segundo a left y right*/
+    margin: 0 auto; /*el primer valor corresponde a top y bottom, y el segundo a left y right*/
 }
 
 .nav-bg
@@ -57,10 +86,21 @@ body
 
 .navegacion-principal 
 {
+    align-items: center;
     display: flex;
+    flex-direction: column;
     justify-content: space-between; /*justify content es para filas y align-items es para columnas(flex-direction)*/
     font-size: 2rem;
     font-weight: bold; /*para poner en negritas*/
+}
+
+@media (min-width: 768px) 
+{
+    .navegacion-principal
+    {
+        flex-direction: row;
+        justify-content: space-between;
+    }
 }
 
 .navegacion-principal a
@@ -94,7 +134,7 @@ body
 {
 body
 {
-    background-color: blue;
+    background-color: white;
 
 }
 }
@@ -104,8 +144,61 @@ body
 {
 body
 {
-    background-color: cornflowerblue;
+    background-color: white;
 
 }
 }
 
+.hero 
+{
+    background-image: url(../image/Angel.jpg); 
+    /* (../ es para regresar un nivel del directorio, la carpeta img esta fuera de styles.css) */
+    background-repeat: no-repeat;
+    /*En imagenes pequeñas suele repetirse y abarcar espacio de la pagina*/
+    background-size: cover;
+    /*sirve para cubrir la imagen con todo el tamaño*/
+    height: 450px; /*Alto de la imagen*/
+    position:relative;  /*Para manipular la posicion, el padre siempre debe ser relative*/
+}
+ .contenedor-hero
+ {
+    position: absolute; /*Para manipular la posicion, el hijo siempre debe de ser absoluto*/
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+ }
+
+ .contenedor p, .contenedor-hero h2
+ {
+    color: var(--blanco);
+ }
+
+ .ubicacion
+ {
+    display: flex;
+    align-items: flex-end;
+ }
+
+
+ .boton
+ {
+    background-color: var(--secundario); /*Color del boton*/
+    color: var(--blanco); /*Color del texto*/
+    padding: 1rem 3rem;
+    margin-top: 3rem; /*Separacion superior*/
+    font-size: 2rem; 
+    text-decoration: none; /*Quitar el subrayado*/
+    text-transform: uppercase; /*Uppercase convertir texto en mayusculas*/
+    font-weight: bold; /*Poner texto en negritas*/
+    border-radius: .5rem; /*redondear esquinas*/
+    width: 90%; /*ancho del boton*/
+    text-align: center; /*centrar texto del boton*/
+
+
+    
+ }
