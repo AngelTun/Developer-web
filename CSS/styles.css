@@ -25,6 +25,8 @@ html
 body
 {
     font-size: 16px;
+    font-family: 'Krub', sans-serif;
+    background-image: linear-gradient(to top, var(--gris) 0%, var(--blanco) 100%);
     
 }
 
@@ -170,6 +172,7 @@ body
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    color: var(--blanco)
 
  }
 
@@ -202,3 +205,25 @@ body
 
     
  }
+ @media (min-width: 768px) 
+ {
+    .boton
+    {
+        width: auto;
+    }
+  
+ }
+
+ .sombra
+ {
+    margin: top;
+    box-shadow: 0px 7px 15px 0px rgba(112,112,112,1);
+    -webkit-box-shadow: 0px 7px 15px 0px rgba(112,112,112,1); /*Motor para Google chrome*/
+    -moz-box-shadow: 0px 7px 15px 0px rgba(112,112,112,1); /*Motor para Mozilla firefox*/
+    background-color: var(--blanco);
+    padding: 2rem;
+    border-radius: 1rem;
+
+ }
+
+ /*Adaptar la seccion de mis servicios con flexbox, y que significa Blur, Box model, moz-box-shadow, y webkit-box-shadow, y la pagina que se uso para el contenedor es css generator*/
