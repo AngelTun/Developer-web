@@ -49,6 +49,7 @@ h3
 h1,h2,h3
 {
     text-align: center;
+    
 }
 
 .titulo 
@@ -176,7 +177,12 @@ body
 
  }
 
- .contenedor p, .contenedor-hero h2
+ .contenedor p
+ {
+    color: var(--oscuro);
+ }
+
+ .contenedor-hero h2
  {
     color: var(--blanco);
  }
