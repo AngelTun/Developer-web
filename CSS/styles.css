@@ -232,4 +232,43 @@ body
 
  }
 
- /*Adaptar la seccion de mis servicios con flexbox, y que significa Blur, Box model, moz-box-shadow, y webkit-box-shadow, y la pagina que se uso para el contenedor es css generator*/
+/*Servicios*/
+@media (min-width: 768px) 
+{
+    .servicio
+    {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+} 
+.servicio
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*Ajustar color y "negritas" del h3*/
+.servicio h3
+{
+    color:var(--secundario);
+    font-weight: normal;
+}
+
+.servicio p
+{
+    text-align: center;
+    /*interlineado*/
+    line-height: 2;
+}
+/*css grid en mis servicios*/
+.servicio .icono
+{
+    height: 15rem;
+    width: 15rem;
+    background-color: var(--primario);
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
