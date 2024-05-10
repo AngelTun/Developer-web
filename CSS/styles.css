@@ -110,6 +110,7 @@ h1,h2,h3
 .navegacion-principal a
 {
     padding-top: 1rem;
+    padding: 1rem;
     color: var(--blanco);
     text-decoration: none;
 }
