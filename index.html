@@ -106,40 +106,42 @@
     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat quam ducimus illum ipsum quibusdam praesentium ex saepe. Dolorem amet expedita porro nobis, quo sed qui eos voluptatibus voluptates possimus repellat.</p>
 </section>
 </div> <!--Servicios-->
-</main>
+
 
 <section>
     <h2>Contacto</h2>
-    <form>
+    <form class="formulario">
         <fieldset>
             <legend>Contactanos llenando todos los campos</legend>
-            <div>
+            <div class="contenedor-campos">
+            <div class="campo">
                 <label>Nombre</label>
-                <input type="text" placeholder="Tu nombre">
+                <input class="input-text" type="text" placeholder="Tu nombre">
             </div>
-            <div>
+            <div class="campo">
                 <label>Telefono</label>
-                <input type="tel" placeholder="Tu telefono">
+                <input  class="input-text" type="tel" placeholder="Tu telefono">
             </div>
-            <div>
+            <div class="campo">
                 <label>Correo electronico</label>
-                <input type="email" placeholder="Tu Email">
+                <input class="input-text" type="email" placeholder="Tu Email">
             </div>
 
-            <div>
+            <div class="campo">
                 <label>Mensaje</label>
-                <textarea></textarea>
+                <textarea class="input-text"></textarea>
             </div>
-
-            <div>
+        </div> <!--contenedor-campos-->
+            <div class="alinear-derecha flex">
                 
-                <input type="submit" value="Enviar">
+                <input class="boton w-sm-100" type="submit" value="Enviar">
             </div>
         </fieldset>
     </form>
+</main>
 </section>
 
-<footer>
+<footer class="footer">
 
     <p>Todos los derechos reservados©, Angel Tun</p>
 
